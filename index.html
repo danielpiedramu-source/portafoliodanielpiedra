@@ -3,79 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Daniel Piedra</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s;
         }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        footer {
             text-align: center;
-            padding: 20px 0;
-            background: #35424a;
-            color: white;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Daniel Piedra's Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <header>Welcome to My Portfolio</header>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating modern and responsive web applications.</p>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>Check out some of the projects I have worked on:</p>
-            <ul>
-                <li>Project 1 - Description</li>
-                <li>Project 2 - Description</li>
-                <li>Project 3 - Description</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch, feel free to reach out through my social media channels or email me!</p>
-        </section>
+        <p>This is the place where I showcase my work and projects.</p>
+        <p>Feel free to explore!</p>
     </div>
-    <footer>
-        <p>&copy; 2026 Daniel Piedra. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
