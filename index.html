@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Daniel Piedra</title>
+    <title>Portfolio - Daniel Piedra</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #F5F7FA; color: #1A1A1A; }
-        header { background-color: #1F3A93; color: white; padding: 20px; text-align: center; }
-        .container { padding: 20px; }
-        .project { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 20px; }
-        .skill { display: inline-block; background: #2E5BDF; color: white; padding: 5px 10px; margin-right: 5px; }
-        a { color: #2E5BDF; text-decoration: none; }
-        footer { text-align: center; margin-top: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Daniel Piedra</h1>
-        <p>Diseñador UX / UI & Comunicador Gráfico</p>
+        <h1>Daniel Piedra's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <div class="container">
-        <p>Bienvenido a mi portafolio. A lo largo de los años, he combinado mi experiencia en diseño gráfico con un enfoque en UX, evolucionando en cada proyecto.</p>
-        <p>Contactame: <a href="mailto:danielpiedramu@gmail.com">danielpiedramu@gmail.com</a></p>
-        <p>Sígueme en:</p>
-        <ul>
-            <li><a href="https://github.com/portafoliodanielpiedra">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/daniel-alejandro-piedra-muciño">LinkedIn</a></li>
-            <li><a href="https://instagram.com/dani_photos_00">Instagram</a></li>
-        </ul>
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>1. App de gestión de citas podológicas</h3>
-            <p>Aplicación móvil diseñada para un consultorio podológico, enfocada en la gestión de pacientes y agendamiento de citas mediante una interfaz clara, rápida y fácil de usar.</p>
-        </div>
-        <div class="project">
-            <h3>2. Diseño de app de suscripciones digitales</h3>
-            <p>Proyecto enfocado en el diseño de una interfaz para la gestión de suscripciones, priorizando la claridad de información y la toma de decisiones del usuario.</p>
-        </div>
-        <div class="project">
-            <h3>3. Documentación de componentes en Figma (Design System)</h3>
-            <p>Desarrollo y documentación de componentes en Figma, enfocado en handoff y control de cambios para equipos de desarrollo.</p>
-        </div>
-        <h2>Habilidades</h2>
-        <div>
-            <span class="skill">Diseño UX/UI centrado en el usuario</span>
-            <span class="skill">Jerarquía visual y comunicación gráfica</span>
-            <span class="skill">Resolución de problemas complejos</span>
-            <span class="skill">Prototipado y diseño en Figma</span>
-            <span class="skill">Empatía y entendimiento del usuario</span>
-        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating modern and responsive web applications.</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Check out some of the projects I have worked on:</p>
+            <ul>
+                <li>Project 1 - Description</li>
+                <li>Project 2 - Description</li>
+                <li>Project 3 - Description</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, feel free to reach out through my social media channels or email me!</p>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2026 Daniel Piedra</p>
+        <p>&copy; 2026 Daniel Piedra. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
