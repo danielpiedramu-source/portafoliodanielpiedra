@@ -1,0 +1,53 @@
+.header {
+    background-color: #1F3A93; /* azul profundo */
+    color: #F5F7FA; /* fondo claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #2E5BDF; /* azul claro */
+    padding: 10px;
+}
+
+nav a {
+    color: #F5F7FA; /* fondo claro */
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #FFC107; /* amarillo */
+}
+
+.projects {
+    background-color: #F5F7FA; /* fondo claro */
+    color: #1A1A1A; /* texto oscuro */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skills {
+    background-color: #F5F7FA; /* fondo claro */
+    color: #1A1A1A; /* texto oscuro */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #1A1A1A; /* texto oscuro */
+    color: #F5F7FA; /* fondo claro */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .header, nav, .projects, .skills, .footer {
+        font-size: 1.5em;
+    }
+}
